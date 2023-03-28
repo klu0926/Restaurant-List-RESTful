@@ -35,8 +35,9 @@
 <div class="container mt-4">
   <div class="row">
     <div class="col-md-10 col-12 mx-auto">
-      <div class="row row-cols-sm-3"> <!-- 下面有三欄 -->
 
+      {{#if restaurants}}
+      <div class="row row-cols-sm-3"> <!-- 下面有三欄 -->
         {{#each restaurants}}
         <div class="mb-4">
           <div class="card mb-1">
@@ -72,8 +73,12 @@
           </div>
         </div>
         {{/each}}
-
       </div>
+      {{else}}
+      <div class="mt-5 d-flex justify-content-center text-secondary">
+        <h1>抱歉沒有找到符合的餐廳，請您從新查詢～</h1>
+      </div>
+      {{/if}}
     </div>
   </div>
 </div>
