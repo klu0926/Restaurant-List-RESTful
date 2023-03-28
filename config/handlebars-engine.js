@@ -4,11 +4,7 @@ const helper = require('./handlebars-helper')
 
 const myHandlebars = handlebars.create({
   defaultLayout: 'main',
-  helper: helper,
+  helper
 })
 
 module.exports = myHandlebars.engine
-
-
-
-

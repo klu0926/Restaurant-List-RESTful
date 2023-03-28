@@ -1,4 +1,4 @@
-function deleteModalSetup() {
+function deleteModalSetup () {
   // index page all card delete buttons
   const deleteButtons = document.querySelectorAll('.deleteButton')
 
@@ -9,8 +9,8 @@ function deleteModalSetup() {
   deleteButtons.forEach(button => {
     button.addEventListener('click', event => {
       const { id, name } = event.target.dataset
-      modalRestaurantName.textContent = name;
-      modalDeleteForm.setAttribute("action", `/restaurants/${id}?_method=DELETE`)
+      modalRestaurantName.textContent = name
+      modalDeleteForm.setAttribute('action', `/restaurants/${id}?_method=DELETE`)
     })
   })
 };

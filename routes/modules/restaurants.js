@@ -1,11 +1,7 @@
 const Router = require('express').Router()
-const restaurant = require('../../models/restaurant')
 const Restaurant = require('../../models/restaurant')
 
-
 // Search
-
-
 
 // Create
 Router.get('/new', (req, res) => {
@@ -15,12 +11,12 @@ Router.get('/new', (req, res) => {
 Router.post('/new', (req, res) => {
   const data = req.body
   // check for name
-  if (data.name.trim() === "") {
+  if (data.name.trim() === '') {
     return res.redirect('/new')
   }
 
   // check for address
-  if (data.location.trim() !== "") {
+  if (data.location.trim() !== '') {
     const encodedInput = data.location
     const googleMapLink = `https://www.google.com/maps?q=${encodedInput}`
     data.google_map = googleMapLink
@@ -36,7 +32,6 @@ Router.post('/new', (req, res) => {
 
 // Read All
 Router.get('/', (req, res) => {
-
   Restaurant.find()
     .lean()
     .then(restaurants => {
