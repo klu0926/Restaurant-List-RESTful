@@ -14,8 +14,6 @@
   font-size: 13px !important;
 }
 
-
-
 header {
   overflow: hidden;
 }
@@ -32,7 +30,7 @@ header {
   position: relative;
   z-index: -1;
   margin: -5px;
-  height: 360px;
+  height: 300px;
   background: #dddddd center center url('https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5720/restaurants-list-cover.jpg');
   background-size: cover;
   filter: blur(3px);
@@ -94,6 +92,10 @@ header {
   text-align: center;
   font-size: 3rem;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.my-container {
+  margin-top: -30px !important;
 }
 
 @media screen and (max-width: 992px) {
