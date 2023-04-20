@@ -66,12 +66,12 @@ npm run dev
 server live on http://localhost:3000
 ```
 
-13.打開瀏覽器輸入以下網址來使用本專案
+10.打開瀏覽器輸入以下網址來使用本專案
 ```
 http://localhost:3000 
 ```
 
-14.若欲暫停使用
+11.若欲暫停使用
 ```
 ctrl + c
 ```

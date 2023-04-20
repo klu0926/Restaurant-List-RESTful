@@ -7,3 +7,4 @@ handlebars.registerHelper('isSame', (string1, string2, options) => {
   }
   return options.inverse(this)
 })
+
